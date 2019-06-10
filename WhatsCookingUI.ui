@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>960</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>WhatsCooking</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+#MainWindow{
+background-image: url(:/Back/back1.jpg);
+}
+QFrame#frameBack{
+
+
+background-color:rgba(174, 142, 103,230)
+}
+#WhatLabel{
+
+	font: 25 16pt &quot;Segoe UI&quot;;
+		color: rgb(255, 255, 255);
+}
+#CookingLabel{
+
+	font: 63 24pt &quot;Segoe UI&quot;;
+	color: rgb(255, 255, 255);
+
+}
+#IGlabel{
+
+	font: 63 12pt &quot;Segoe UI&quot;;
+	color: rgb(255, 255, 255);
+
+}
+#NoteLabel{
+
+	font: 63 9pt &quot;Segoe UI&quot;;
+	color: rgb(255, 255, 255);
+
+}
+#NBTrainButton{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(199, 202, 147, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+}
+#KNNTrainButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(199, 202, 147, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+}
+#FTTrainButton{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(199, 202, 147, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+#OurNBTrainButton{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(199, 202, 147, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+}
+#PTDButton{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(199, 202, 147, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+}
+#PListButton{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(199, 202, 147, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+}
+#IngredientTxtBox{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(199, 202, 147, 255), stop:1 rgba(255, 255, 255, 255));
+}
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frameBack">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>40</y>
+      <width>1121</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="NBTrainButton">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>140</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Train with Naive Bayes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="KNNTrainButton">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>200</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Train with Decision Tree</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="FTTrainButton">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>260</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Train with Random Forest</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="OurNBTrainButton">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>320</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Train with Our Naive Bayes </string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="IngredientTxtBox">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>200</y>
+       <width>561</width>
+       <height>101</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="IGlabel">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>140</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ingredients </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NoteLabel">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>160</y>
+       <width>311</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Note: type  ingredent like Ingredient1,Ingredient2,Ingredient3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PTDButton">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>320</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Predict Test Data</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PListButton">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>320</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Predict List</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="WhatLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>301</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Whats</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CookingLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cooking</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="UI.qrc"/>
+ </resources>
+ <connections/>
+</ui>
